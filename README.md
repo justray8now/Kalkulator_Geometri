@@ -26,7 +26,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Rahmat Ageng Yuwana - [@yaelahreyy](https://www.instagram.com/yaelahreyy/) - rahmatagengyuwana@gmail.com.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Linkedin: [https://www.linkedin.com/in/rahmat-ageng-yuwana-44b1a226b/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
