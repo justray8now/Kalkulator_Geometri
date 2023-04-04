@@ -1,10 +1,12 @@
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 
 Website ini adalah aplikasi sederhana yang dapat digunakan untuk menghitung nilai dari beberapa bangun datar dan melakukan konversi satuan dari cm ke m. Website ini dibangun dengan menggunakan HTML dan JavaScript.
+
+<!-- PREVIEW -->
+![image](https://user-images.githubusercontent.com/91546971/229656062-d26bd479-6568-42b6-8d55-2fc734b0cfdf.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
