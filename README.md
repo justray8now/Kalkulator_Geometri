@@ -1,7 +1,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+      LINK: https://kalkulator-geometri.netlify.app/
 
 Website ini adalah aplikasi sederhana yang dapat digunakan untuk menghitung nilai dari beberapa bangun datar dan melakukan konversi satuan dari cm ke m. Website ini dibangun dengan menggunakan HTML dan JavaScript.
 
