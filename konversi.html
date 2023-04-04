@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .primary-color {
+            color: #414141;
+        }
+
+        .input-bg {
+            background-color: #ffffff;
+        }
+
+        .area-calc {
+            color: #111111cc;
+        }
+
+        .title {
+            color: #11111199;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator konversi</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "https://cdn4.iconfinder.com/data/icons/banking-and-finance/500/calculator-pencil-512.png" 
+            type = "image/x-icon">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6c0e978889.js" crossorigin="anonymous"></script>
+</head>
+<body class="container mx-auto">
+    <header class="flex justify-between my-12 bg-sky-100 px-11 py-5 rounded-lg">
+        <h1><span class="area-calc text-5xl font-bold">Selamat Datang!</span>
+            <span class="title text-3xl-center font-medium block">Website Kalkulator konversi</span>
+        </h1>
+        <div class="flex items-center">
+            <button onclick="window.location.href = 'index.html'" id="blog"
+                class="text-white font-bold text-xl bg-cyan-500 hover:bg-cyan-600 px-9 py-2 rounded-lg">Kembali
+            </button>
+        </div>
+    </header>
+
+    </h1>
+    <h2 class="text-3xl font-semibold text-cyan-600">Apa itu Kalkulator konversi?</h2>
+    <br>
+    <p class="text-slate-700 font-medium">Sebuah web tambahan untuk mengubah nilai hasil hitung bangun datar dari cm ke meter atau sebaliknya.
+        <fieldset>
+            <legend>Silahkan masukkan nilai !</legend>
+              <label class="font-bold" for="c" >Centimeter: </label>
+              <input id="c" type="number" value="100">
+              <label class="font-bold" for="m" > Meter:</label>
+              <input id="m" type="number" value="1">
+          </fieldset>
+    </p>
+</body>
+<script>
+    let m = document.getElementById("m");
+    let c = document.getElementById("c");
+    m.addEventListener("input", function(){
+      let mv = m.value;
+      let cv = mv * 100;
+      c.value = cv;
+    });
+    c.addEventListener("input", function(){
+      let cv = c.value;
+      let mv = cv / 100;
+      if (!Number.isInteger(mv)){
+        mv = mv.toFixed(3);
+      }
+      m.value = mv;
+    });
+</script>
+
+</html>

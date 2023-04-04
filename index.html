@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Geometri</title>
+     <!-- add icon link -->
+     <link rel = "icon" href = 
+     "https://cdn2.iconfinder.com/data/icons/flat-icons-19/512/Cube.png" 
+             type = "image/x-icon">      
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>             
+    /* BAGIAN Style.css */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .primary-color {
+            color: #414141;
+        }
+
+        .input-bg {
+            background-color: #ffffff;
+        }
+
+        .area-calc {
+            color: #111111cc;
+        }
+
+        .title {
+            color: #11111199;
+        }
+
+        footer {
+  background-color: #b7e7fa;
+  color: #fff;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: #414141;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+footer nav ul li a i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+    </style>
+</head>
+
+<body class="container mx-auto">
+    <header class="flex justify-between my-12 bg-sky-100 px-11 py-5 rounded-lg">
+        <h1><span class="area-calc text-5xl font-bold">Selamat Datang!</span>
+            <span class="title text-3xl-center font-medium block">Website hitung bangun datar</span>
+        </h1>
+        <div class="flex items-center">
+            <button onclick="window.location.href = 'konversi.html'" id="konversi"
+                class="text-white font-bold text-xl bg-cyan-500 hover:bg-cyan-600 px-9 py-2 rounded-lg">Kalkulator konversi
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div id="segitiga1" class="px-11 py-12 roundeds border-2 border-slate-100 hover:bg-blue-50">
+                <img class="mb-12 mx-auto" src="images/segitiga1.png" alt="Gambar Segitiga">
+                <h3 class="font-bold text-3xl primary-color text-center mb-2.5">Segitiga</h3>
+                <p class="font-normal primary-color mb-5 text-center">Luas (L) = 1/2 x a x t</p>
+                <div class="flex ml-8 mb-12 mx-auto">
+                    <input id="alas" class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="a">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                    <input id="tinggi" class="outline-0 py-1.5 pl-3 w-16 sm:w-16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="t">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                </div>
+                <button id="btn-calculate-segitiga1"
+                    class="text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 sm:px-8 sm:py-4 md:px-12 md:py-3 lg:px-16 lg:py-4  xl:px-32 xl:py-4 rounded-lg">Hitung</button>
+            </div>
+
+            <div id="segitiga2" class="px-11 py-12 roundeds border-2 border-slate-100 hover:bg-blue-50">
+                <img class="mb-12 mx-auto" src="images/segitiga2.png" alt="Gambar Segitiga">
+                <h3 class="font-bold text-3xl primary-color text-center mb-2.5">Segitiga</h3>
+                <p class="font-normal primary-color mb-5 text-center">Keliling (K) = a + b + c</p>
+                <div class="flex ml-8 mb-12 mx-auto">
+                    <input id="sisi1" class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="a">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                    <input id="sisi2" class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="b">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                    <input id="sisi3" class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="c">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                </div>
+                <button id="btn-calculate-segitiga2"
+                    class="text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 sm:px-8 sm:py-4 md:px-12 md:py-3 lg:px-16 lg:py-4  xl:px-32 xl:py-4 rounded-lg">Hitung</button>
+            </div>
+            
+            <div class="px-11 py-12 roundeds border-2 border-slate-100 hover:bg-blue-50 row-span-3">
+                <h3 class="text-xl area-calc font-bold mb-6 text-center">Hasil Perhitungan :
+                </h3>
+                <div class="flex items-center justify-center">
+                    <ol id="area-calculation-list" class="list-decimal text-center">
+                    </ol>
+                </div>
+            </div>
+            <div id="jajargenjang1" class="px-11 py-12 roundeds border-2 border-slate-100 hover:bg-blue-50">
+                <img class="mb-12 mx-auto" src="images/jajargenjang1.png" alt="Gambar Jajar Genjang">
+                <h3 class="font-bold text-3xl primary-color text-center mb-2.5">Jajar Genjang</h3>
+                <p class="font-normal primary-color mb-5 text-center">Luas (L) = a x t</p>
+                <div class="flex ml-8 mb-12 mx-auto">
+                    <input id="alasjajar"
+                        class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg" type="text"
+                        placeholder="a">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                    <input id="tinggijajar"
+                        class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg" type="text"
+                        placeholder="t">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                </div>
+                <button id="btn-calculate-jajargenjang1"
+                    class="text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 sm:px-8 sm:py-4 md:px-12 md:py-3 lg:px-16 lg:py-4  xl:px-32 xl:py-4 rounded-lg">Hitung</button>
+            </div>
+
+            <div id="jajargenjang2" class="px-11 py-12 roundeds border-2 border-slate-100 hover:bg-blue-50">
+                <img class="mb-12 mx-auto" src="images/jajargenjang2.png" alt="Gambar Jajar Genjang">
+                <h3 class="font-bold text-3xl primary-color text-center mb-2.5">Jajar Genjang</h3>
+                <p class="font-normal primary-color mb-5 text-center">Keliling (K) = 2 x (a + b)</p>
+                <div class="flex ml-8 mb-12 mx-auto">
+                    <input id="alasjajar2" class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="a">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                    <input id="sisimiring" class="outline-0 py-1.5 pl-3 w-16 sm:16 md:w-20 lg:w-20 rounded input-bg"
+                        type="text" placeholder="b">
+                    <label class="mx-1 primary-color mt-1" for="cm">cm</label>
+                </div>
+                <button id="btn-calculate-jajargenjang2"
+                    class="text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 sm:px-8 sm:py-4 md:px-12 md:py-3 lg:px-16 lg:py-4  xl:px-32 xl:py-4 rounded-lg">Hitung</button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="js/segitiga1.js"></script>
+    <script src="js/segitiga2.js"></script>
+    <script src="js/jajargenjang.js"></script>
+    <script src="js/jajargenjang2.js"></script>
+
+    <!-- Kontainer bawah -->
+    <footer>
+        <div class="container">
+          <nav>
+            <ul>    
+              <li><a href="https://github.com/justray8now"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://www.instagram.com/yaelahreyy/"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/rahmat-ageng-yuwana-44b1a226b/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+          </nav>
+          <h3 class="font-medium primary-color text-center mb-12.5">RAY © 2023</h3>
+        </div>
+      </footer>
+</body>
+</html>
